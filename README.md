@@ -1,1 +1,1 @@
-# 100_Days_of_web_dev
+# 100 Days of web dev
