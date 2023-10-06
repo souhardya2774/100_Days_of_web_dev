@@ -1,0 +1,59 @@
+header{
+    margin-bottom: 64px;
+}
+
+h1{
+    font-size: 48px;
+    color: rgb(71, 62, 62);
+}
+
+/* #description{
+    margin-bottom: 36px;
+} */
+
+header p{
+    margin: 12px;
+}
+
+a{
+    font-size: 24px;
+    padding: 12px 48px;
+    color: white;
+    background-color: rgb(167, 1, 78);
+    border-radius: 4px;
+    display: inline-block;
+}
+
+a:hover{
+    background-color: rgb(110, 6, 53);
+    text-decoration: none;
+}
+
+ol{
+    list-style: none;
+    width: 600px;
+    margin: 36px auto 0 auto;
+    padding: 0;
+}
+
+li{
+    border-radius: 6px;
+    background-color: rgb(223, 136, 124);
+    padding: 16px;
+    margin: 32px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2{
+    color: rgb(78, 13, 5);
+    font-family: "Oswald", sans-serif;
+}
+
+li p{
+    margin: 12px;
+    color: rgb(71, 29, 22);
+}
+
+.highlight-goal{
+    background-color: rgb(224, 97, 80);
+}
