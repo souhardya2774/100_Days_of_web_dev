@@ -65,6 +65,7 @@
   
   .destination {
     margin: 0 20px;
+    width: 33.33%;
   }
 
   .destination p{
@@ -80,7 +81,7 @@
   }
   
   .destination img {
-    height: 200px;
+    height: 300px;
     width: 100%;
     box-shadow: 2px 4px 8px rgb(68, 67, 67);
     border-radius: 10px;
