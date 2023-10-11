@@ -7,19 +7,33 @@ header{
     position: static;
 }
 
+#page-logo a,header ul a{
+    color: rgb(183, 230, 235);
+}
+
+header nav a:hover{
+    background-color: rgb(183, 230, 235);
+    color: rgb(59, 59, 59);
+}
+
 main ul{
     width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 48px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 main li{
-    margin: 20px;
     display: flex;
     background-color: white;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     overflow: hidden;
-    width: 550px;
+}
+
+main li:nth-of-type(3){
+    grid-column: 1 / 3;
 }
 
 main li img{
@@ -35,20 +49,20 @@ main li img{
     justify-content: space-between;
 }
 
+.item-content h2{
+    margin: 0;
+}
+
 .content p{
     font-size: 20px;
 }
 
 .actions{
-    /* display: flex;
-    justify-content: flex-end; */
     text-align: right;
 }
 
 .actions a{
-     padding: 8px 4px;
-    /* display: flex;
-    align-items: center; */
+    padding: 8px 4px;
     text-decoration: none;
     color: rgb(0, 208, 255);
     border-radius: 6px;
