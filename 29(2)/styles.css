@@ -1,0 +1,126 @@
+html{
+    background-color: rgb(236, 254, 254);
+}
+
+*{
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    margin: 1.5rem;
+}
+
+form{
+    background-color: rgb(243, 250, 255);
+    width: 40rem;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 4rem;
+}
+
+ul{
+    list-style: none;
+}
+
+h2{
+    margin:1rem 0;
+}
+
+li,textarea{
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input,textarea,select{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border: 1px solid rgb(184, 184, 184);
+    padding: 0.45rem;
+    color: rgb(64, 60, 60);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+select{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+textarea{
+    height: 10rem;
+    resize: none;
+}
+
+#radio-elements{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.radio-element{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#terms-acceptance{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.radio-element input,#terms-acceptance input{
+    margin: 0;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.radio-element label,#terms-acceptance label{
+    margin-bottom: 0;
+}
+
+#btns{
+    display: flex;
+    justify-content: flex-end;
+}
+
+button{
+    font-size: 1rem;
+    margin: 1rem 0.15rem;
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+}
+
+#clear-btn{
+    background-color: white;
+    border: 2px groove rgb(187, 187, 187);
+    border-radius: 4px;
+}
+
+#submit-btn{
+    background-color: rgb(22, 22, 40);
+    color: white;
+    border-radius: 4px;
+}
+
+#clear-btn:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+#submit-btn:hover{
+    background-color: rgb(59, 59, 107);
+}

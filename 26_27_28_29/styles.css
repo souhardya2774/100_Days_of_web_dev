@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(36, 35, 35);
+}
+
+*{
+    font-family: 'Roboto',sans-serif;
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+form{
+    width: 30rem;
+    margin: 3rem auto;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 6px;
+
+}
+
+label{
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input,textarea,select{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    border: 1px solid rgb(184, 184, 184);
+    padding: 0.25rem;
+    color: rgb(64, 60, 60);
+}
+
+textarea{
+    resize: none;
+}
+
+input:focus,textarea:focus{
+    background-color: rgb(225, 198, 249);
+}
+
+button{
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(60, 8, 108);
+    color: white;
+    border: 1px solid rgb(60, 8, 108);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(30, 5, 54);
+    border-color: rgb(60, 8, 108);
+}
+
+#radio,#checkbox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.radio-elements,.checkbox-element{
+    display: flex;
+    align-items: center;
+}
+
+div input{
+    width: auto;
+    margin-top: 0.6rem;
+    margin-right: 0.5rem;
+}

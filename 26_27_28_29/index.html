@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Demo Form</h1>
+    </header>
+    <main>
+        <form action="/index.html" method="POST">
+            <section >
+                <label for="username">Your Name</label>
+                <input type="text" name="user-name" id="username" required/>
+
+                <label for="useremail">Your Email Address</label>
+                <input type="email" name="user-email" id="useremail" required>
+
+                <label for="userpassword">Your Password</label>
+                <input type="password" name="user-password" id="userpassword" required minlength="7">
+            </section>
+            
+            <label for="usermessage">Your Message</label>
+            <textarea name="user-message" id="usermessage"></textarea>
+            <label for="userage">Your Age</label>
+            <input type="number" step="1" name="user-age" id="userage" required min="18">
+            
+            <label for="birthdate">Your Birth-Date</label>
+            <input type="date" name="birth-date" id="birthdate" required min="2003-01-01">
+            <hr>
+            <label for="favoritecolor">Your Favorite Color</label>
+            <select name="favorite-color" id="favoritecolor">
+                <option value="blue">Blue</option>
+                <option value="black">Black</option>
+                <option value="Red">Red</option>
+            </select>
+            <div id="radio">
+                <h2>How should we verify your account?</h2>
+                <div class="radio-elements">
+                    <input type="radio" name="verify" id="verify-text-message" value="text" required>
+                    <label for="verify-text-message">Verify Using Text Messages</label>
+                </div>
+                <div class="radio-elements">
+                    <input type="radio" name="verify" id="verify-phone-call" value="call" required>
+                    <label for="verify-phone-call">Verify Via Phone Call</label>
+                </div>
+                <div class="radio-elements">
+                    <input type="radio" name="verify" id="verify-email-id" value="email" required>
+                    <label for="verify-email-id">Verify Via Email Id</label>
+                </div>
+            </div>
+            <hr>
+            <div id="checkbox">
+                <div class="checkbox-element">
+                    <input type="checkbox" name="terms" id="agree-terms">
+                    <label for="agree-terms">Agree to terms?</label>
+                </div>
+                <div class="checkbox-element">
+                    <input type="checkbox" name="contact" id="contact-via-email" value="email">
+                    <label for="contact-via-email">Contact Via Email?</label>
+                </div>
+                <div class="checkbox-element">
+                    <input type="checkbox" name="contact" id="contact-via-phone" value="phone">
+                    <label for="contact-via-phone">Contact Via Phone?</label>
+                </div>
+            </div>
+            <button>Submit</button>
+        </form>
+    </main>
+</body>
+</html>
