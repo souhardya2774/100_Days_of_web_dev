@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Taco Bells",
+        "address": "Opposite to 1G Store, Boston",
+        "cuisine": "Mexican",
+        "website": "https://locations.tacobell.com/ma/boston.html",
+        "description": "Great cuisine"
+    },
+    {
+        "name": "Taco Bells",
+        "address": "449 West Broadway Boston, MA 02127",
+        "cuisine": "Mexican",
+        "website": "https://locations.tacobell.com/ma/boston.html",
+        "description": "Also great food"
+    }
+]
