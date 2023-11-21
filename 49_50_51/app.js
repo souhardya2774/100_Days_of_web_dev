@@ -1,7 +1,10 @@
 // const { json } = require("body-parser");
 const express=require("express");
-const fs = require("fs");
 const path = require("path");
+
+
+const defaultRoutes=require("./routes/default");
+const restaurantRoutes=require("./routes/restaurants");
 
 const app=express();
 
@@ -13,44 +16,16 @@ app.set("view engine","ejs");
 app.use(express.static("frontend-site"));
 app.use(express.urlencoded({extended:false}));
 
+app.use("/",defaultRoutes);
 
-app.get("/",(req,res)=>{
-    res.render("index");
+app.use("/",restaurantRoutes);
+
+app.use((req,res)=>{
+    res.status(404).render("404");
 });
 
-app.get("/restaurants",(req,res)=>{
-    const dataFilePath=path.join(__dirname,"data","restaurants.json");
-    const fileData= fs.readFileSync(dataFilePath);
-    const storedRestaurants=JSON.parse(fileData);
-
-    res.render("restaurants",
-        {
-            numberOfRestaurants:storedRestaurants.length,
-            restaurants:storedRestaurants
-        }
-    );
-});
-
-app.get("/confirm",(req,res)=>{
-    res.render("confirm");
-});
-
-app.get("/about",(req,res)=>{
-    res.render("about");
-});
-
-app.get("/recommend",(req,res)=>{
-    res.render("recommend");
-});
-
-app.post("/recommend",(req,res)=>{
-    const restaurant=req.body;
-    const dataFilePath=path.join(__dirname,"data","restaurants.json");
-    const fileData= fs.readFileSync(dataFilePath);
-    const storedRestaurants=JSON.parse(fileData);
-    storedRestaurants.push(restaurant);
-    fs.writeFileSync(dataFilePath,JSON.stringify(storedRestaurants));
-    res.redirect("/confirm");
+app.use((error,req,res,next)=>{
+    res.status(500).render("500");
 });
 
 app.listen(3000);
